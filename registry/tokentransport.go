@@ -86,6 +86,10 @@ func (authService *authService) Request(username, password string) (*http.Reques
 		return nil, err
 	}
 
+        if authService.Scope == "" {
+            authService.Scope = "registry:catalog:*"
+        }
+
 	q := url.Query()
 	q.Set("service", authService.Service)
 	q.Set("scope", authService.Scope)
