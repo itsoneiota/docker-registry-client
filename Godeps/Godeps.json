@@ -4,14 +4,19 @@
 	"GodepVersion": "v62",
 	"Deps": [
 		{
-			"ImportPath": "github.com/docker/distribution/digest",
+			"ImportPath": "github.com/ttysteale/distribution/digest",
 			"Comment": "v2.1.0",
 			"Rev": "9ca7921603852314b18a6ecc19f91806935f34bd"
 		},
 		{
-			"ImportPath": "github.com/docker/distribution/manifest",
+			"ImportPath": "github.com/ttysteale/distribution/manifest",
 			"Comment": "v2.1.0",
 			"Rev": "9ca7921603852314b18a6ecc19f91806935f34bd"
-		}
+		},
+                {
+                        "ImportPath" : "github.com/docker/distribution/reference",
+                        "Comment" : "v2.4.1",
+                        "Rev" : "03efb43768979f4d2ea5187bef995656441829e5"
+                }
 	]
 }
